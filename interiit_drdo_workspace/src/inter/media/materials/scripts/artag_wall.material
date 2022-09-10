@@ -1,0 +1,13 @@
+material ARtag_wall{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture 6x61.jpg
+                scale 1 1
+            }
+        }   
+    }
+}

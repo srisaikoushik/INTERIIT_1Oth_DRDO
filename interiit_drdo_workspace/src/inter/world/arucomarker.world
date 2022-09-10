@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+    <!-- Focus camera on tall pendulum -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>3 -3 2 0.000000 0.275643 2.356190</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- <include>
+        <uri>model://artag_wall</uri>
+        <pose>0 0 0 0 0 0 0</pose>
+    </include> -->
+     <gui fullscreen='0'>
+        <camera name='user_camera'>
+          <pose frame=''>0.799901 327.272 41.305 0 0.54 -2.23003</pose>
+          <view_controller>orbit</view_controller>
+          <projection_type>perspective</projection_type>
+        </camera>
+      </gui>
+  
+      <model name="iris">
+        <include>
+          <uri>model://drone_with_depth_camera</uri>
+        </include>
+        <pose>0 0 0 0 0 0</pose>
+      </model>  
+
+   </world>
+</sdf>
